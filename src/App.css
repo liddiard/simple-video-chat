@@ -1,0 +1,48 @@
+button {
+  background-color: #0c0;
+  border: 0;
+  font-size: 1.4em;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  border-radius: 0.1em;
+  color: white;
+  padding: 0.3em 0.6em;
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d0;
+}
+
+button:active {
+  background-color: #0b0;
+}
+
+#remote-video video {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#local-video {
+  position: absolute;
+  width: 160px;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.message {
+  padding: 1em;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.message.center {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
