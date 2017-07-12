@@ -26,6 +26,8 @@ class App extends Component {
       return this.alertUnsupported();
     }
 
+    // a not-ideal way of checking if we need to do permission priming
+    // see: https://stackoverflow.com/a/41205493
     navigator.mediaDevices.enumerateDevices()
     .then(devices => {
       if (!devices.some(device => device.label.length)) {
